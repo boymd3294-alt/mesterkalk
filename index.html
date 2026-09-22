@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1677ff">
+<meta name="description" content="MesterKalk – praktikus szakmai és otthoni kalkulátorok">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="MesterKalk">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+<link rel="stylesheet" href="./css/style.css">
+<title>MesterKalk</title>
+</head>
+<body>
+<header>
+<button id="homeBtn" class="brand" type="button">🧮 MesterKalk</button>
+<div class="tag">Praktikus számolás egyszerűen</div>
+<button id="installBtn" class="install-btn hidden" type="button">📲 Telepítés</button>
+</header>
+<main id="app">
+<section id="home" class="screen active"><div class="hero"><span>GYORS • PONTOS • EGYSZERŰ</span><h1>Mit szeretnél kiszámolni?</h1><p>Válassz egy kategóriát, majd add meg az adatokat és a mértékegységeket.</p></div><div id="categories" class="grid categories"></div></section>
+<section id="category" class="screen"><button id="backCategory" class="back" type="button">← Kategóriák</button><div id="categoryHeader"></div><div id="calculators" class="grid calc-grid"></div></section>
+<section id="calculator" class="screen"><button id="backCalc" class="back" type="button">← Vissza</button><div id="calcHeader"></div><div class="calc-layout"><form id="calcForm" class="card"><div id="fields"></div><button class="primary" type="submit">🧮 Számolás</button></form><aside id="result" class="result card hidden"><div class="result-label">EREDMÉNY</div><div id="resultMain" class="result-main">—</div><div id="resultDetails"></div><button id="again" class="secondary" type="button">Új számítás</button></aside></div></section>
+</main>
+<footer>MesterKalk • önálló, helyben számoló alkalmazás</footer>
+<script src="./js/data.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
